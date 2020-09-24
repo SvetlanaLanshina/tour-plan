@@ -6,6 +6,9 @@
     align-items: center
     justify-content: space-between
     padding-bottom: 20px
+  &-grid 
+    display: flex
+    justify-content: space-between  
     &__offer
       margin-left: 14px
       margin-top: 4px
@@ -25,6 +28,7 @@
   &-discription
     font-size: 12px
     line-height: 15px
+    align-items: flex-start
 .stars
   flex-basis: 100% 
 .offer
@@ -82,10 +86,87 @@
     &--next
       right: 18px
       background-image: url(../img/arrow-next.svg)
-      
     &--prev
       left: 18px
       background-image: url(../img/arrow-prev.svg)
+.booking
+  background-color: $dark
+  color: $light
+  background-origin: 8px
+  width: 350px
+  height: 210px
+  border-radius: 8px
+  padding: 28px
+  &__info
+    display: flex
+    justify-content: space-between
+    margin-bottom: 9px
+  &__price
+    display: flex
+    flex-direction: column
+  &__start
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 10px
+    line-height: 14px
+  &__pricetag
+    font-family: Nunito
+    font-style: normal
+    font-weight: 800
+    font-size: 24px
+    line-height: 33px
+  &__per-room
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__room
+    margin-left: 4px
+  &__text
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 8px
+    font-family: Nunito
+    font-style: normal
+    font-weight: normal
+    font-size: 12px
+    line-height: 16px
+  &__discription
+    margin-left: 9px
+  &__call-center
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-bottom: 17px  
+  &__heading
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 18px
+    line-height: 25px
+  &__number
+    display: flex
+    align-items: center
+    justify-content: space-between
+    color: inherit
+  &__num
+    margin-left: 8px
+  &__button
+    width: 100%  
+    min-height: 45px
+    font-family: Nunito
+    font-style: normal
+    font-weight: 600
+    font-size: 14px
+    line-height: 19px
+    border-radius: 4px
+    background-color: $primery 
+    border: none
+    color: $light
+    cursor: pointer
       
 
 
