@@ -1202,6 +1202,9 @@ template {
   .reviews-slider__item {
     max-width: 580px;
   }
+  .activities {
+    padding-bottom: 70px;
+  }
   .activities-wrapper {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -1360,6 +1363,9 @@ template {
   }
   .subscribe {
     width: 100%;
+  }
+  .activities__title {
+    font-size: 18px;
   }
   .card {
     width: 100%;
