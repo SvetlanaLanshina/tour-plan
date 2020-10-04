@@ -1,7 +1,7 @@
 @media (max-width: 1200px)
   .container
     max-width: 960px
-    
+
   .hotel
     &-slider
       width: 590px
@@ -12,6 +12,9 @@
   .card
     width: 230px
     height: 230px
+  .footer
+    &__input
+      flex-basis: 100%
 
 @media (max-width:992px)
   .container, .newsletter-wrapper
@@ -21,45 +24,79 @@
   .navbar
     &-top
       padding-top: 30px
-      padding-bottom: 30px 
+      padding-bottom: 30px
     &__search
       margin-left: auto
-    
+
     &-menu
       padding-top: 22px
       padding-bottom: 22px
       &__link
         font-size: 12px
-        line-height: 15px  
+        line-height: 15px
   .search
     &__input
       width: 340px
-  .hotel    
+  .hotel
     &-grit
       flex-direction: column
     &__slider
       margin-bottom: 30px
     &-right
-      flex-direction: row  
+      flex-direction: row
     &-slider
-      width: 100%  
+      width: 100%
   .booking
     width: 340px
   .map
-    width: 340px  
+    width: 340px
   .reviews
     &-slider
       &__item
-        max-width: 580px   
+        max-width: 580px
   .activities
     padding-bottom: 70px
     &-wrapper
       flex-wrap: wrap
     &__card
-      margin-bottom: 20px    
+      margin-bottom: 20px
   .card
     width: 340px
-    height: 230px         
+    height: 230px
+  .footer
+    &-wrapper
+      grid-template-columns: repeat(6, 1fr)
+      grid-row-gap: 40px
+    &__logo
+      grid-row: 1 / 2
+      grid-column: span 2
+    &__social
+      &-network
+        grid-row: 1 / 2
+        grid-column: span 4
+        align-self: center
+    &__categories
+      grid-row: 2 / 3
+      grid-column: span 2
+    &__legal
+      grid-column: span 2
+    &__additional
+      grid-column: span 2
+    &__contact
+      &-details
+        grid-column: span 5
+        grid-row: 3
+      &-forms
+        grid-column: span 5
+        grid-row: 4
+    &__information
+      justify-content: space-between
+      margin-top: 56px
+    &__disclaimer
+      padding-left: 0
+
+    &__pay
+      margin-left: 0
 
 @media (max-width: 768px)
   .container
@@ -93,26 +130,26 @@
       flex-basis: 100%
     &-info
       &__text
-        width: 100%   
+        width: 100%
       &__name
         margin-top: 10px
-        margin-bottom: 0   
+        margin-bottom: 0
       &__rating
         display: none
       &__offer
         order: -1
         margin-left: 0
-  
+
   .hotel
     &-right
       flex-direction: column
       min-height: 450px
     &-slider
-      height: 350px  
-  .booking    
+      height: 350px
+  .booking
     width: 100%
   .map
-    width: 100%  
+    width: 100%
   .newsletter
     &-wrapper
       max-width: 576px
@@ -134,23 +171,22 @@
         &--next
           right: 50%
           margin-right: -65px
-          transform: translate(50%, 0) 
+          transform: translate(50%, 0)
   .activities
     padding-top: 40px
     padding-bottom: 60px
   .card
     width: 47%
-    height: 255px             
+    height: 255px
 
-              
 @media ( max-width: 576px )
   .logo
-    width: 99px  
+    width: 99px
   .hotel
     &__slider
       margin-bottom: 20px
     &-slider
-      height: 250px  
+      height: 250px
   .newsletter
     padding: 76px 0 83px 0
     &-title
@@ -161,17 +197,48 @@
         font-size: 30px
         line-height: 38px
   .subscribe
-    width: 100%  
+    width: 100%
   .activities
     &__title
-      font-size: 18px    
+      font-size: 18px
   .card
-    width: 100%  
+    width: 100%
+  .footer
+    &-wrapper
+      grid-template-columns: 1fr
+    &__logo
+      grid-row: 1fr
+      grid-column: 1fr
+    &__social
+      &-network
+        grid-row: 2
+        grid-column: 1
+    &__additional
+      grid-row: 3
+      grid-column: 1
+    &__categories
+      grid-row: 4
+      grid-column: 1
+    &__legal
+      grid-row: 5
+      grid-column: 1
+    &__contact
+      &-details
+        grid-row: 6
+        grid-column: 1
+      &-forms
+        grid-row: 7
+        grid-column: 1
+    &__information
+      flex-direction: column
+      margin-top: 30px
+    &__disclaimer
+      width: 100%
+    &__pay
+      width: 100%
 
 @media ( max-width: 320px )
   .navbar
     &-top
       padding-top: 28px
-      padding-bottom: 28px 
-      
-
+      padding-bottom: 28px
