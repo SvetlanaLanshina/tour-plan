@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
-    <header class="navbar">
+    <header class="navbar navbar__mobile_fixed">
       <div class="container">
         <div class="navbar-top">
           <a href="#" class="logo">
@@ -22,7 +22,7 @@
               class="logo__image"
             />
           </a>
-          <form action="#" class="search navbar__search">
+          <form action="#" class="search navbar__search navbar__search_mobile_hidden">
             <input
               type="text"
               class="search__input"
@@ -33,7 +33,7 @@
             </button>
           </form>
 
-          <a href="#" class="user navbar__user">
+          <a href="#" class="user navbar__user navbar__user_mobile_hidden">
             <img
               src="img/user-avatar.jpg"
               alt="avatar: Nathan"
@@ -53,7 +53,26 @@
       <!-- /.container -->
       <div class="navbar-bottom">
         <div class="container">
-          <ul class="navbar-menu">
+          <ul class="navbar-menu">          
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <a 
+               href="#"
+               class="user navbar__user navbar__user_mobile_visible">
+               <img 
+               src="img/user-avatar.jpg"
+                alt="avatar: Nathan" 
+                class="user__avatar" />
+               <span class="user__name user__name_light">Nathan</span>
+              </a>
+            </li>
+            <li class="navbar-menu__item navbar-menu__item_mobile_visible">
+              <form action="#" class="search navbar__search navbar__search_mobile_visible">
+                <input type="text" class="search__input" placeholder="Search Location" />
+                <button class="search__button">
+                  <img src="img/search.svg" alt="Icon: search" />
+                </button>
+              </form>
+            </li>
             <li class="navbar-menu__item">
               <a href="#" class="navbar-menu__link">All Deals</a>
             </li>
@@ -235,8 +254,8 @@
                 style="border: 0"
                 allowfullscreen=""
                 aria-hidden="false"
-                tabindex="0"
-              ></iframe>
+                tabindex="0">
+              </iframe>
             </div>
             <!-- /.map -->
           </div>
@@ -520,8 +539,8 @@
                   <div class="footer__icon-wrapper">
                     <img src="img/phone-call.svg" alt="icon: phone-call" class="footer__icon" />
                   </div>
-                  Tel (business hours) : 269 1500 </br>
-                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)</br>
+                  Tel (business hours) : 269 1500 <br>
+                  Tel (hotline) Monday - Saturday: 52-56-61-38 (08:00 am – 20:00 pm)<br> 
                   Tel (hotline) Sunday: 52-56-61-38 (08:00 am – 14:00 pm)
 
                 </li>
