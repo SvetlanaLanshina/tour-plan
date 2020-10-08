@@ -14,7 +14,8 @@
     height: 230px
   .footer
     &__input
-      flex-basis: 100%
+      &-group
+        flex-basis: 100%
 
 @media (max-width:992px)
   .container, .newsletter-wrapper
@@ -67,6 +68,10 @@
     &-wrapper
       grid-template-columns: repeat(6, 1fr)
       grid-row-gap: 40px
+    &_input
+      &-group
+        flex-basis: 48%
+
     &__logo
       grid-row: 1 / 2
       grid-column: span 2
@@ -222,7 +227,10 @@
   .card
     width: 47%
     height: 255px
-
+  .footer
+    &__input
+      &-group
+        flex-basis: 100%
 @media ( max-width: 576px )
   .logo
     width: 99px
@@ -280,9 +288,3 @@
       width: 100%
     &__pay
       width: 100%
-
-@media ( max-width: 320px )
-  .navbar
-    &-top
-      padding-top: 28px
-      padding-bottom: 28px
